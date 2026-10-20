@@ -5,7 +5,7 @@ metadata:
 data:
   krakend.json: |
     {
-      "version": 3,
+      "version": 4,
       "name": "Carnival Gateway",
       "port": 8080,
       "timeout": "3s",

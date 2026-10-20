@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookish-carnival
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/skully/bookish-carnival.git
+    targetRevision: main
+    path: manifests
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: carnival
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true

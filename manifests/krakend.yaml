@@ -30,6 +30,21 @@ data:
             }
           ]
         }
+        {
+          "endpoint": "/api/profile",
+          "method": "GET",
+          "backend": [
+            {
+              "host": ["http://backend-a"],
+              "url_pattern": "/user",
+              "group": "user"
+            },
+            {
+              "host": ["http://backend-b"],
+              "url_pattern": "/orders"
+            }
+          ]
+        }
       ]
     }
 ---

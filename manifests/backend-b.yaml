@@ -22,7 +22,7 @@ kind: Deployment
 metadata:
   name: backend-b
 spec:
-  replicas: 0 
+  replicas: 1
   selector:
     matchLabels:
       app: backend-b

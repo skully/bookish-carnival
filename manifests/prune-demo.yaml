@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: prune-demo
-data:
-  message: "Ezt kesobb Gitbol toroljuk."
